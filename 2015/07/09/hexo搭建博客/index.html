@@ -3,36 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>hexo搭建博客 | Edward&#39;s programming world</title>
+  <title>Hexo搭建博客 | Edward&#39;s programming world</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="搭建记录
-mac 下可直接brew install node
-
-检查是否安装成功 node -v &amp;amp;&amp;amp; npm -v
-
-Hexo 安装
-123456789# 安装npm install hexo -g# 生成mkdir your_blog_pathhexo init &amp;amp;&amp;amp; npm install # 不一起操作可能会引起 cannot Get /#添加内容hexo">
+  <meta name="description" content="Hexo是基于NodeJs的静态博客程序，对于不熟悉Node的人也很友好，可以很方便得搭建自己的博客并部署到github上。作为博客的第一篇内容，记录一下搭建的步骤和坑。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo搭建博客">
+<meta property="og:title" content="Hexo搭建博客">
 <meta property="og:url" content="http:/2015/07/09/hexo搭建博客/index.html">
 <meta property="og:site_name" content="Edward's programming world">
-<meta property="og:description" content="搭建记录
-mac 下可直接brew install node
-
-检查是否安装成功 node -v &amp;amp;&amp;amp; npm -v
-
-Hexo 安装
-123456789# 安装npm install hexo -g# 生成mkdir your_blog_pathhexo init &amp;amp;&amp;amp; npm install # 不一起操作可能会引起 cannot Get /#添加内容hexo">
-<meta property="og:updated_time" content="2015-07-09T07:49:14.000Z">
+<meta property="og:description" content="Hexo是基于NodeJs的静态博客程序，对于不熟悉Node的人也很友好，可以很方便得搭建自己的博客并部署到github上。作为博客的第一篇内容，记录一下搭建的步骤和坑。">
+<meta property="og:updated_time" content="2015-07-09T08:17:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo搭建博客">
-<meta name="twitter:description" content="搭建记录
-mac 下可直接brew install node
-
-检查是否安装成功 node -v &amp;amp;&amp;amp; npm -v
-
-Hexo 安装
-123456789# 安装npm install hexo -g# 生成mkdir your_blog_pathhexo init &amp;amp;&amp;amp; npm install # 不一起操作可能会引起 cannot Get /#添加内容hexo">
+<meta name="twitter:title" content="Hexo搭建博客">
+<meta name="twitter:description" content="Hexo是基于NodeJs的静态博客程序，对于不熟悉Node的人也很友好，可以很方便得搭建自己的博客并部署到github上。作为博客的第一篇内容，记录一下搭建的步骤和坑。">
   
     <link rel="alternative" href="/atom.xml" title="Edward&#39;s programming world" type="application/atom+xml">
   
@@ -128,7 +110,7 @@ Hexo 安装
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/hexo-mac/" style="font-size: 10px;">hexo mac</a>
+						<a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a>
 					</div>
 				</section>
 				
@@ -209,7 +191,7 @@ Hexo 安装
         
   
     <h1 class="article-title" itemprop="name">
-      hexo搭建博客
+      Hexo搭建博客
     </h1>
   
 
@@ -218,7 +200,7 @@ Hexo 安装
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo-mac/">hexo mac</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mac/">mac</a></li></ul>
 	</div>
 
         
@@ -229,13 +211,15 @@ Hexo 安装
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="搭建记录">搭建记录</h3><ul>
+        <p>Hexo是基于NodeJs的静态博客程序，对于不熟悉Node的人也很友好，可以很方便得搭建自己的博客并部署到github上。作为博客的第一篇内容，记录一下搭建的步骤和坑。</p>
+<a id="more"></a>
+<h3 id="搭建记录">搭建记录</h3><ul>
 <li><p>mac 下可直接<code>brew install node</code></p>
 </li>
 <li><p>检查是否安装成功 <code>node -v &amp;&amp; npm -v</code></p>
 </li>
 <li><p>Hexo 安装</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装</span></span><br><span class="line"><span class="built_in">npm</span> install hexo -g</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成</span></span><br><span class="line">mkdir your_blog_path</span><br><span class="line">hexo init &amp;&amp; <span class="built_in">npm</span> install <span class="comment"># 不一起操作可能会引起 cannot Get /</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#添加内容</span></span><br><span class="line">hexo <span class="keyword">new</span> <span class="string">"yourblogName"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># 安装</span></span><br><span class="line">npm install hexo -g</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># 生成</span></span><br><span class="line">mkdir your_blog_path</span><br><span class="line">hexo init &amp;&amp; npm install # 不一起操作可能会引起 cannot Get /</span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#添加内容</span></span><br><span class="line">hexo <span class="keyword">new</span> <span class="string">"yourblogName"</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#部署到github</span></span><br><span class="line">type: git # 填github可能会遇到无法找到github</span><br><span class="line">hexo deploy</span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#修改主题 _config.yml</span></span><br><span class="line">theme: theme_you_want</span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#修改主题的设置 theme/theme_name/_config.yml</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 
@@ -245,16 +229,6 @@ Hexo 安装
   </div>
   
     
-<nav id="article-nav">
-  
-  
-    <a href="/2015/07/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
-  
-</nav>
-
   
 </article>
 
@@ -278,7 +252,7 @@ Hexo 安装
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="hexo搭建博客" data-title="hexo搭建博客" data-url="http:/2015/07/09/hexo搭建博客/"></div>
+	<div class="ds-thread" data-thread-key="hexo搭建博客" data-title="Hexo搭建博客" data-url="http:/2015/07/09/hexo搭建博客/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
